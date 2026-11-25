@@ -1,0 +1,75 @@
+
+--- Terminal on /dev/ttyUSB0 | 115200 8-N-1
+--- Available filters and text transformations: debug, default, direct, esp32_exception_decoder, hexlify, log2file, nocontrol, printable, send_on_enter, time
+--- More details at https://bit.ly/pio-monitor-filters
+--- Quit: Ctrl+C | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H
+
+=== Power probe 2 ===  VREG_EN idle = 0
+
+[Trial 1/8] OFF_RDY alone high @100ms; release OFF_RDY
+Press the power button once...
+  +100 ms: OFF_RDY -> 1
+  stayed on for 5 s = handshake OK
+  releasing OFF_RDY -> 0
+  RESULT: speaker switched OFF 0 ms after release
+
+[Trial 2/8] both high @100ms; release ON_OFF only
+Press the power button once...
+  +100 ms: ON_OFF -> 1
+  +100 ms: OFF_RDY -> 1
+  stayed on for 5 s = handshake OK
+  releasing ON_OFF -> 0
+  RESULT: still ON after release (this release does NOT turn it off)
+
+[Trial 3/8] both high @100ms; release OFF_RDY only
+Press the power button once...
+  +100 ms: ON_OFF -> 1
+  +100 ms: OFF_RDY -> 1
+  stayed on for 5 s = handshake OK
+  releasing OFF_RDY -> 0
+  RESULT: speaker switched OFF 0 ms after release
+
+[Trial 4/8] both high @100ms; release both
+Press the power button once...
+  +100 ms: ON_OFF -> 1
+  +100 ms: OFF_RDY -> 1
+  stayed on for 5 s = handshake OK
+  releasing ON_OFF -> 0
+  releasing OFF_RDY -> 0
+  RESULT: speaker switched OFF 0 ms after release
+
+[Trial 5/8] both high @300ms (timing)
+Press the power button once...
+  +300 ms: ON_OFF -> 1
+  +300 ms: OFF_RDY -> 1
+  stayed on for 5 s = handshake OK
+  releasing ON_OFF -> 0
+  releasing OFF_RDY -> 0
+  RESULT: speaker switched OFF 0 ms after release
+
+[Trial 6/8] both high @500ms (timing)
+Press the power button once...
+  +500 ms: ON_OFF -> 1
+  +500 ms: OFF_RDY -> 1
+  stayed on for 5 s = handshake OK
+  releasing ON_OFF -> 0
+  releasing OFF_RDY -> 0
+  RESULT: speaker switched OFF 0 ms after release
+
+[Trial 7/8] both high @700ms (timing)
+Press the power button once...
+  +700 ms: ON_OFF -> 1
+  +700 ms: OFF_RDY -> 1
+  stayed on for 5 s = handshake OK
+  releasing ON_OFF -> 0
+  releasing OFF_RDY -> 0
+  RESULT: speaker switched OFF 0 ms after release
+
+[Trial 8/8] both high @900ms (timing)
+Press the power button once...
+  +900 ms: ON_OFF -> 1
+  +900 ms: OFF_RDY -> 1
+  stayed on for 5 s = handshake OK
+  releasing ON_OFF -> 0
+  releasing OFF_RDY -> 0
+  RESULT: speaker switched OFF 0 ms after release

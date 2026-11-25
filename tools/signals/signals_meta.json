@@ -1,0 +1,143 @@
+{
+  "sample_rate": 48000,
+  "channels": 2,
+  "format": "WAV_IEEE_FLOAT32_DUAL_MONO",
+  "sweep_params": {
+    "type": "farina_ess",
+    "f1_hz": 20.0,
+    "f2_hz": 20000.0,
+    "duration_s": 4.0,
+    "fade_ms": 10.0,
+    "L": 0.5790593092043358
+  },
+  "marker_params": {
+    "freq_hz": 1000.0,
+    "level_dbfs": -12.0,
+    "burst_ms": 50.0,
+    "gap_ms": 50.0,
+    "count": 3,
+    "fade_ms": 5.0
+  },
+  "hardware_baseline_note": {
+    "esp32_hpf_hz": 48.0,
+    "esp32_hpf_order": 4,
+    "esp32_crossover_hz": 3500.0,
+    "esp32_crossover_type": "LR4",
+    "ak7755_cont14": "0xAC (OUT1 woofer -6 dB, OUT2 tweeter -10 dB)",
+    "tpa3116_gain_db": 26.0
+  },
+  "files": {
+    "ess_stepped": {
+      "filename": "ess_stepped.wav",
+      "total_samples": 1596000,
+      "duration_s": 33.25,
+      "marker_start_sample": 96000,
+      "marker_length_samples": 12000,
+      "sweeps": [
+        {
+          "index": 0,
+          "level_dbfs": -24.0,
+          "start_sample": 156000,
+          "length_samples": 192000,
+          "start_s": 3.25
+        },
+        {
+          "index": 1,
+          "level_dbfs": -18.0,
+          "start_sample": 396000,
+          "length_samples": 192000,
+          "start_s": 8.25
+        },
+        {
+          "index": 2,
+          "level_dbfs": -12.0,
+          "start_sample": 636000,
+          "length_samples": 192000,
+          "start_s": 13.25
+        },
+        {
+          "index": 3,
+          "level_dbfs": -6.0,
+          "start_sample": 876000,
+          "length_samples": 192000,
+          "start_s": 18.25
+        },
+        {
+          "index": 4,
+          "level_dbfs": -3.0,
+          "start_sample": 1116000,
+          "length_samples": 192000,
+          "start_s": 23.25
+        },
+        {
+          "index": 5,
+          "level_dbfs": 0.0,
+          "start_sample": 1356000,
+          "length_samples": 192000,
+          "start_s": 28.25
+        }
+      ]
+    },
+    "ess_single_m20db": {
+      "filename": "ess_single_m20db.wav",
+      "total_samples": 348000,
+      "duration_s": 7.25,
+      "marker_start_sample": 48000,
+      "marker_length_samples": 12000,
+      "sweeps": [
+        {
+          "index": 0,
+          "level_dbfs": -20.0,
+          "start_sample": 108000,
+          "length_samples": 192000,
+          "start_s": 2.25
+        }
+      ]
+    },
+    "drc_burst_60hz": {
+      "filename": "drc_burst_60hz.wav",
+      "total_samples": 1020000,
+      "duration_s": 21.25,
+      "marker_start_sample": 48000,
+      "marker_length_samples": 12000,
+      "carrier_freq_hz": 60.0,
+      "carrier_start_sample": 108000,
+      "ramp_ms": 2.0,
+      "bursts": [
+        {
+          "repeat": 0,
+          "step_up_sample": 180000,
+          "step_down_sample": 204000,
+          "step_up_s": 3.75,
+          "step_down_s": 4.25,
+          "low_dbfs": -24.0,
+          "high_dbfs": -3.0,
+          "burst_s": 0.5,
+          "post_s": 2.0
+        },
+        {
+          "repeat": 1,
+          "step_up_sample": 516000,
+          "step_down_sample": 540000,
+          "step_up_s": 10.75,
+          "step_down_s": 11.25,
+          "low_dbfs": -24.0,
+          "high_dbfs": -3.0,
+          "burst_s": 0.5,
+          "post_s": 2.0
+        },
+        {
+          "repeat": 2,
+          "step_up_sample": 852000,
+          "step_down_sample": 876000,
+          "step_up_s": 17.75,
+          "step_down_s": 18.25,
+          "low_dbfs": -24.0,
+          "high_dbfs": -3.0,
+          "burst_s": 0.5,
+          "post_s": 2.0
+        }
+      ]
+    }
+  }
+}
